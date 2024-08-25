@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <title>Metal Inferno Fest</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="product_style.css">
+</head>
+
+<body>
+
+    <nav class="navbar bg-dark navbar-dark p-3 navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="Home_hw3.html" class="navbar-brand">
+                <img src="icon.jpg" alt="" width="50" height="40" class="d-inline-block align-text-top">
+                Metal Inferno Fest
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="product.html" class="nav-link">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- 将搜索表单放置在右侧 -->
+            <form class="d-flex">
+                <input class="form-control me-2" id="mySearch" type="search" onkeyup="myFunction()" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+            <li class="nav-item">
+                <span class="nav-link">Cart: <span id="cartCount">0</span></span>
+            </li>
+        </div>
+    </nav>
+    
+    
+    
+
+    <div class="p-5 text-center border-bottom">
+        <h1><strong>The most Bloody, Distorted Hardcore Music Festvial</strong></h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead m-4">
+                The Metal Inferno Festival, a fiery celebration of heavy metal music, 
+                is set to ignite the stage once again. With a lineup of renowned metal bands, 
+                headbangers from all corners of the globe gather to revel in the thunderous 
+                riffs and electrifying performances. Brace yourself for a sonic inferno like no other!
+            </p>
+            <button class="btn btn-success btn-lg" onclick="javascript:location.href='https://vocus.cc/article/63946fe3fd897800019ae2f6'">More Introduction</button>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Filter for Product collection</h2>
+        <p>Enter the follwing 4 categories to find your favorite !</p>
+        <input type="text" 
+               class="form-control" 
+               placeholder="Search Here"
+               id="txtInputTable"
+               onkeyup="mySearch()">
+        <br>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Band</th>
+                    <th>Style</th>
+                    <th>Album</th>
+                    <th>Album price</th>
+                </tr>
+            </thead>
+            <tbody id="tableDetails">
+                <tr>
+                    <td>Chthonic</td>
+                    <td>Hardcore Metal</td>
+                    <td>Battlefield of Assuras</td>
+                    <td>480</td>
+                </tr>
+                <tr>
+                    <td>Crystal Lake</td>
+                    <td>Deathcore Metal</td>
+                    <td>Helix</td>
+                    <td>1050</td>
+                </tr>
+                <tr>
+                    <td>Flesh Juicer</td>
+                    <td>Grindcore NuMetal</td>
+                    <td>Golden Taizi Bro</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td>Obsess</td>
+                    <td>Emotional Rock</td>
+                    <td>Beast</td>
+                    <td>620</td>
+                </tr>
+                <tr>
+                    <td>Fire EX.</td>
+                    <td>Punk Rock</td>
+                    <td>Let me Stand Up like a Taiwanesse</td>
+                    <td>780</td>
+                </tr>
+                <tr>
+                    <td>Infernal Chaos</td>
+                    <td>Hardcore Metal</td>
+                    <td>Vision of Disorder</td>
+                    <td>920</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  
+
+    <div class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card shadow-lg">
+                        <img src="album1.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">ChthoniC - Battlefield of Assuras</h3>
+                            <p class="card-text">
+                                台灣最具國際代表性的重金屬搖滾樂團「閃靈」，闊別五年後，終於推出全新專輯《政治》！
+                                五年來，閃靈五位團員雖然分別開展了人生新頁，但他們並沒有忘記曾經許諾歌迷的新作品，
+                                更邀來香港天后何韻詩聯手獻聲制霸！台灣本格重金屬再次降臨！十一首新曲，就像是一段冒險
+                                ，穿梭在有血有肉的台灣神佛與修羅戰場之中。迎面而來的是滿點的戰意、無赦的殺氣、難攻的
+                                銅牆鐵壁、難捨的七情六慾，卻又激勵著無限的勇氣，終至永恆智慧的探索。聽到淚流滿面，才
+                                知道這竟是驚心動魄的傳奇源起，百年前的政治追尋....雖然這是一張神魔唱秋、妖精打架的專
+                                輯，但每個人都能在歌曲中宣洩怒氣、抒發傷痛、並找到重生的力量。是學生的好夥伴、職場的
+                                好幫手、政壇的好家私。 
+                            </p>
+                            <p class="card-price" data-band="Chthonic" data-album="Battlefield of Assuras" data-price="480">
+                                定價 : 480
+                            </p>
+                            <button class="btn btn-primary add-to-cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-lg">
+                        <img src="album2.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Crystal Lake - Helix</h3>
+                            <p class="card-text">
+                                Helix is the fifth studio album by Japanese metalcore band Crystal Lake. 
+                                It was released on 28 November 2018 in Japan and on 15 February 2019 worldwide 
+                                through SharpTone Records. It was produced by Daihei Yamanaka and the band themselves.
+                                It is the first release on this label since the band's departure from Artery Recordings. 
+                                It is also the last album to feature their founding rhythm guitarist Shinya Hori before 
+                                he left the band in 2020, and vocalist Ryo Kinoshita before his departure in September 2022.
+                            </p>
+                            <p class="card-price" data-band="Crystal Lake" data-album="Helix" data-price="1050">
+                                定價 : 1050
+                            </p>
+                            <button class="btn btn-primary add-to-cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-lg">        
+                        <img src="album3.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Flesh Juicer - Golden Taizi Bro</h3>
+                            <p class="card-text">
+                                黃金太子哥<br>
+                                道裝子民們<br>
+                                吉整出萬其<br>
+                                日備征眾聚<br>
+                                已等壹來準<br>
+                                出狼貳相殺<br>
+                                現煙參伴翻<br>
+                                誰沒夢想過最頂端到位置？
+                                路途上有多少懷疑的目光？
+                                太子哥，滿腔熱血、野心勃勃，帶領著支持自己夢想大業的戰隊往頂端衝。
+                                總想讓信道他的信眾知道「沒有飛不出的夢想，只有跨不出的步伐。」
+                                所以當衝入高處空氣稀薄的雲海中，當墜入伸手不見五指的深淵中，
+                                當他困在夢想大道十字路口時，他該怎麼辦？
+                                殺出另一個漂亮成績回來，就這麼辦！
+                                這次，
+                                全新的血肉太子哥帶上新專輯，
+                                磨刀霍霍，準備殺翻。
+                            </p>
+                            <p class="card-price" data-band="Flesh Juicer" data-album="Golden Taizi Bro" data-price="350">
+                                定價 : 350
+                            </p>
+                            <button class="btn btn-primary add-to-cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 text-center border-bottom"></div>
+
+                <div class="col-lg-4">
+                <div class="card shadow-lg">        
+                        <img src="album4.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Obsess - Beast</h3>
+                            <p class="card-text">
+                                他的 他的目光 掩蓋不住埋在心中的慌 妄想 妄想力量 早下定決心賭命幹一場 
+                                滂沱大雨的夜晚 一個人在街上抬頭望著家鄉的方向 烏雲擋住了月光 晚風也無法讓汗水
+                                停止滑落臉龐被雨水浸透逞強 你總是說你早就恨透貧窮的模樣誰會輕易為失敗的人撐傘 
+                                他們嘲笑你 讓你以為人生 在無情的城市 就該平淡無奇浮沉在人海裡 誰來拯救我可悲殘破的自己 
+                                沒有意志只剩下行走的軀體 每當夜色壟罩沒落 視線被淚水掩沒 從不曾要求什麼 
+                                只想努力好好活著啊每當夜色壟罩沒落 視線被淚水掩沒 從不曾要求什麼 
+                                只想努力好好活著啊好好活著啊 開啟慾望的念頭人終將成為一頭野獸開啟慾望的念頭人終將成為
+                                一頭野獸
+                            </p>
+                            <p class="card-price" data-band="Obsess" data-album="Beast" data-price="620">
+                                定價 : 620
+                            </p>
+                            <button class="btn btn-primary add-to-cart">
+                                Add to Cart
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-lg">        
+                        <img src="album5jpg.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Fire EX. - Let me Stand Up like a Taiwanesse</h3>
+                            <p class="card-text">
+                                成軍邁向20年，滅火器在第五張專輯《無名英雄 Stand Up Like A Taiwanese》裡，
+                                擷取島上民主歷程中不同的時代片段，接起世代台灣人的故事，再將從逆境奮起的期盼，
+                                交給下一個年輕世代。台灣島上的人們，有著不斷被置換的記憶，不斷被強加的身份。
+                                外力摧毀共享的歷史，更讓說出自己名字，變成一件需要勇氣的事。荒謬、苦悶與迷惘，
+                                或許讓人耽溺在厭世感裡，輕易地踏在許多前人用血淚爭取來的自由上，卻不再寄望能打
+                                造這塊島嶼的未來。滅火器用《無名英雄 Stand Up Like A Taiwanese》向蔓延的漠然怒吼，
+                                延續一貫的熱血，點燃對所有台灣人的呼喚－不要害怕說出自己的名字。昂首挺立，我們能擔起這個名字
+                                ，也能打造更好的國家。
+                            </p>
+                            <p class="card-price" data-band="Fire EX." data-album="Let me Stand Up like a Taiwanesse" data-price="780">
+                                定價 : 780
+                            </p>
+                            <button class="btn btn-primary add-to-cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-lg">        
+                            <img src="album6.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Infernal Chaos - Vision of Disorder</h3>
+                                <p class="card-text">
+                                    成軍三年來的首張專輯《Vision Of Disorder》，馬上為台灣金屬界投下一顆大號震撼彈。
+                                    Thrash Metal與NWOAHM的混種，讓歌曲更具破壞力也更具可聽性。凶狠riff的大軍壓境、
+                                    高複雜度chord的聽覺撕扯，將扭曲的內心世界與深沉的人性黑暗面刻劃得栩栩如生；動聽
+                                    的間奏時刻，更像是心魔甦醒前的最後一抹晚霞。Bass、大鼓、與銅鈸的齊發，搭配著忽
+                                    快忽慢的踩速，Double Size的打樁機咚咚咚的企圖摧毀那道自律的最後防線。
+                                </p>
+                                <p class="card-price" data-band="Infernal Chaos" data-album="Vision of Disorder" data-price="920">
+                                    定價 : 920
+                                </p>
+                                <button class="btn btn-primary add-to-cart">
+                                    Add to Cart
+                                </button>
+                            </div> 
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 购物车弹出窗口 -->
+    <div class="modal" id="cartModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Cart</h4>
+                    <button type="button" class="close" data-dismiss="modal" onclick="saveCart()">×</button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Price</th>
+                                <th>Number</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartItems">
+                            <!-- 这里将动态添加购物车项目 -->
+                        </tbody>
+                    </table>
+                    <p>Total: $<span id="cartTotal">0.00</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="saveCart()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <footer class="p-4 border-top">
+        <div class="container aligh-items-center justify-content-between d-flex">
+            <p class="mb-0 text-muted">
+                &copy; All rights reserved by Sky Sky Sky, 2023
+            </p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="Home_hw3.html" class="nav-link text-muted">About Website</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:skychen901009@gmail.com" class="nav-link text-muted">Join US</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:skychen901009@gmail.com" class="nav-link text-muted">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="product_script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .accordion{
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: solid yellow;
+            font-size: 15px;
+        }
+        .active, .accordion:hover{
+            background-color: #ccc;
+        }
+
+        .panel{
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+        }
+        .panel1{
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+        }
+    </style>
+    <title>Menu</title>
+</head>
+<body>
+    <h2>Accordion</h2>
+
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+        <p>Section 1 content</p>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel1">
+        <p>Section 2 content</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+        <p>Section 3 content</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion")
+        var i;
+
+        for(i-0;i<acc.length;i++){
+            acc[i],addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibiling;
+                if(panel.style.display == "block"){
+                    panel.style.display = "none";
+                }else{
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+}
+.header_ul{
+    display:flex;
+    margin:0;
+    padding:0;
+    top:0;
+    width:100%;
+    background-color: rgb(0, 81, 255);
+    justify-content: center;
+}
+.header_li{
+    list-style-type: none;
+}
+.header_li a{
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    color:aliceblue;
+    text-align: center;
+    padding:10px 10px;
+    width: 100px;
+    text-decoration: none;
+}
+.header_li a:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+.header{
+    color: aliceblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.frame{
+    display: flex;
+}
+.frame_left{
+    background-color: gray;
+    width: 200px;
+}
+.frame_left a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    list-style-type: none;
+}
+.frame_right{
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    padding: 10px 10px;
+    margin:auto;
+}
+.frame_right a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.frame .frame_right .frame_right_video{
+    text-align: center;
+    width: 750px;
+    height: 375px;
+}
+.footer{
+    background-color: #af51ea;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 0px;
+}
+.frame_right_item_1{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    padding: 10px 10px;
+    margin:auto;
+}
+.frame_right_item_1_1{
+    display: flex;
+    width: 50%;
+}
+.frame_right_item_1_1_R{
+    width: 50%;
+}
+.frame_right_item_1_1_R a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.frame_right_item_1_1_L{
+    width: 50%;
+}
+.frame_box{
+    background-color: #fff;
+    display: flex;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(250, 248, 248, 0.2);
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    list-style-type:none;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(248, 246, 246, 0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;;
+  }

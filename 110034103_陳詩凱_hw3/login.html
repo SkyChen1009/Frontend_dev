@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <title>Metal Inferno Fest - Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+
+    <style>
+    html{
+        scroll-behavior: smooth;
+    }
+    #myBtn{
+        background:
+        radial-gradient(circle at top left, transparent 15px, #f86002 0) top left,
+        radial-gradient(circle at top right, transparent 15px, #f86002 0) top right,
+        radial-gradient(circle at bottom left, transparent 15px, #f86002 0) bottom left,
+        radial-gradient(circle at bottom right, transparent 15px, #f86002 0) bottom right;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgb(0, 85, 255);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    #myBtn:hover{
+        background-color: #555;
+    }
+
+    .login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+    }
+
+    login.h1 {
+        color: #333;
+    }
+
+    login.form {
+        margin: 20px;
+    }
+
+    login.label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    login.input[type="text"],
+    login.input[type="password"] {
+        width: 300px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #666;
+    }
+
+    .center-button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #fff;
+        color: #333;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar bg-dark navbar-dark p-3 navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="Home_hw3.html" class="navbar-brand">
+                <img src="icon.jpg" alt="" width="50" height="40" class="d-inline-block align-text-top">
+                Metal Inferno Fest
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <ul class="nav-item">
+                        <a href="product.html" class="nav-link">Product</a>
+                    </ul>
+                    <ul class="nav-item">
+                        <a href="register.html" class="nav-link">Register</a>
+                    </ul>
+                    <ul class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" id="mySearch" type="search" onkeyup="myFunction()" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="p-5 text-center border-bottom">
+        <h1><strong>The most Bloody, Distorted Hardcore Music Festvial</strong></h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead m-4">
+                The Metal Inferno Festival, a fiery celebration of heavy metal music, 
+                is set to ignite the stage once again. With a lineup of renowned metal bands, 
+                headbangers from all corners of the globe gather to revel in the thunderous 
+                riffs and electrifying performances. Brace yourself for a sonic inferno like no other!
+            </p>
+            <button class="btn btn-success btn-lg" onclick="javascript:location.href='https://vocus.cc/article/63946fe3fd897800019ae2f6'">More Introduction</button>
+        </div>
+    </div>
+
+    <form class="login" action="login.php" method="post">
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="submit" value="Log In">
+    </form>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="center-button">
+        <button onclick="window.location.href='register.html'" type="button" class="myAdd">Without An Account ?</button>
+    </div>
+
+    <footer class="p-4 border-top">
+        <div class="container aligh-items-center justify-content-between d-flex">
+            <p class="mb-0 text-muted">
+                &copy; All rights reserved by Sky Sky Sky, 2023
+            </p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="Home_hw3.html" class="nav-link text-muted">About Website</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:skychen901009@gmail.com" class="nav-link text-muted">Join US</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:skychen901009@gmail.com" class="nav-link text-muted">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+
+    <script>
+        //back to top JS
+        var mybutton=document.getElementById("myBtn");
+    
+        window.onscroll=function() {scrollFunction()};
+    
+        function scrollFunction(){
+            if(document.body.scrollTop>20||document.documentElement.scrollTop>20){
+            mybutton.style.display="block";
+        }
+        else{
+            mybutton.style.display="none";
+        }
+        }   
+        function topFunction(){
+            document.body.scrollTop=0;
+            document.documentElement.scrollTop=0;
+        }
+    </script>
+</body>
+</html>

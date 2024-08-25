@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkScope(){}
+        {
+            let a='block scope';
+            var b='fuction scope';
+        }
+        {
+            //a變數屬於上面的區塊作用域，此處不可用
+            //b變數屬於checkScope函式的作用域，此處可用
+
+            //console.log(a); error
+            console.log(b);     //function scope
+        }
+        //a在此處不可用，b此處可用
+        //console.log(a);   error
+        conosle.log(b);     //function scope
+        //a,b在此處不可用
+        checkScope();
+    </script>
+</body>
+</html>

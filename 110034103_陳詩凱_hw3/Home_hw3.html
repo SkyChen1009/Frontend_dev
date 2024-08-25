@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <title>Metal Inferno Fest</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+
+    <style>
+    html{
+        scroll-behavior: smooth;
+    }
+    #myBtn{
+        background:
+        radial-gradient(circle at top left, transparent 15px, #f86002 0) top left,
+        radial-gradient(circle at top right, transparent 15px, #f86002 0) top right,
+        radial-gradient(circle at bottom left, transparent 15px, #f86002 0) bottom left,
+        radial-gradient(circle at bottom right, transparent 15px, #f86002 0) bottom right;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgb(0, 85, 255);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    #myBtn:hover{
+        background-color: #555;
+    }
+
+    #mySearch{
+            position: right;
+            width: 25%;
+            font-size: 18px;
+            padding: 11px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar bg-dark navbar-dark p-3 navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="Home_hw3.html" class="navbar-brand">
+                <img src="icon.jpg" alt="" width="50" height="40" class="d-inline-block align-text-top">
+                Metal Inferno Fest
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <ul class="nav-item">
+                        <a href="product.html" class="nav-link">Product</a>
+                    </ul>
+                    <ul class="nav-item">
+                        <a href="register.html" class="nav-link">Register</a>
+                    </ul>
+                    <ul class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" id="mySearch" type="search" onkeyup="myFunction()" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="p-5 text-center border-bottom">
+        <h1><strong>The most Bloody, Distorted Hardcore Music Festvial</strong></h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead m-4">
+                The Metal Inferno Festival, a fiery celebration of heavy metal music, 
+                is set to ignite the stage once again. With a lineup of renowned metal bands, 
+                headbangers from all corners of the globe gather to revel in the thunderous 
+                riffs and electrifying performances. Brace yourself for a sonic inferno like no other!
+            </p>
+            <button class="btn btn-success btn-lg" onclick="javascript:location.href='https://vocus.cc/article/63946fe3fd897800019ae2f6'">More Introduction</button>
+        </div>
+    </div>
+
+
+    <div class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg">
+                    <div class="card shadow-lg">
+                        <img src="chthonic.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">ChthoniC</h3>
+                            <p class="card-text">
+                                Hailing from Taiwan, Chthonic is a force to be reckoned with in the metal scene. 
+                                Their unique blend of melodic black metal infused with traditional Taiwanese 
+                                elements captivates audiences worldwide. With thought-provoking lyrics centered 
+                                on mythology and human rights, Chthonic's powerful music transcends cultural 
+                                boundaries, leaving a lasting impact on metal enthusiasts.
+                            </p>
+                            <button class="btn btn-primary" onclick="javascript:location.href='http://www.youtube.com/@chthonictw'">
+                                YouTube channel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card shadow-lg">
+                        <img src="crystal lake.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Crystal Lake</h3>
+                            <p class="card-text">
+                                Crystal Lake, the Japanese powerhouse, is a relentless force in the world 
+                                of metalcore. Known for their explosive energy and intricate musicianship, 
+                                they have garnered international acclaim. With a seamless fusion of crushing 
+                                breakdowns, soaring melodies, and heartfelt lyrics, Crystal Lake's music 
+                                resonates with fans, leaving a lasting imprint on the genre.
+                            </p>
+                            <button class="btn btn-primary" onclick="javascript:location.href='https://www.youtube.com/@FleshJuicer'">
+                                YouTube channel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card shadow-lg">        
+                        <img src="flesh juicer.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Flesh Juicer</h3>
+                            <p class="card-text">
+                                Flesh Juicer, the Taiwanese metal sensation, is a sonic assault on the senses. 
+                                Combining elements of death metal and industrial music, their sound is heavy, 
+                                aggressive, and relentless. With visceral lyrics exploring dark themes, Flesh 
+                                Juicer's intense live performances and raw energy have earned them a devoted 
+                                following in the underground metal scene.
+                            </p>
+                            <button class="btn btn-primary" onclick="javascript:location.href='https://www.youtube.com/@JMSBASE'">
+                                YouTube channel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 text-center border-bottom"></div>
+
+                <div class="col-lg">
+                <div class="card shadow-lg">        
+                        <img src="obsess.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Obsess</h3>
+                            <p class="card-text">
+                               Obsess, the Taiwanese indie sensation, is making waves in the music scene. 
+                               With their unique blend of dreamy melodies and introspective lyrics, they 
+                               create a sonic journey that resonates with listeners. Obsess' captivating 
+                               performances and heartfelt compositions showcase their artistry, earning 
+                               them a dedicated following and recognition in the indie music community.
+                            </p>
+                            <button class="btn btn-primary" onclick="javascript:location.href='https://www.youtube.com/@OBSESSOFFICIALTW'">
+                                YouTube channel
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card shadow-lg">        
+                        <img src="fire ex.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Fire EX.</h3>
+                            <p class="card-text">
+                                Fire Ex, the Taiwanese indie band, is setting the music scene ablaze. 
+                                Their high-energy performances and infectious blend of rock, punk, 
+                                and pop have garnered a massive following. Fire Ex's anthemic songs, 
+                                infused with witty lyrics and social commentary, ignite a sense of 
+                                rebellion and empowerment, making them a force to be reckoned with.
+                            </p>
+                            <button class="btn btn-primary" onclick="javascript:location.href='https://www.youtube.com/@FireEX.'">
+                                YouTube channel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card shadow-lg">        
+                            <img src="infernal chaos.jpg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Infernal Chaos</h3>
+                                <p class="card-text">
+                                    Infernal Chaos, the Taiwanese metal powerhouse, unleashes 
+                                    sonic mayhem upon the world. With blistering riffs, thunderous drums, 
+                                    and guttural vocals, their music plunges listeners into a dark and 
+                                    intense realm. Infernal Chaos' relentless energy and technical prowess 
+                                    command attention, solidifying their status as a formidable presence 
+                                    in the metal community.
+                                </p>
+                                <button class="btn btn-primary" onclick="javascript:location.href='https://www.youtube.com/channel/UCM55XFaHH6_Sk7gQGjltEog'">
+                                    YouTube channel
+                                </button>
+                            </div> 
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+    <footer class="p-4 border-top">
+        <div class="container aligh-items-center justify-content-between d-flex">
+            <p class="mb-0 text-muted">
+                &copy; All rights reserved by Sky Sky Sky, 2023
+            </p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="Home_hw3.html" class="nav-link text-muted">About Website</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:skychen901009@gmail.com" class="nav-link text-muted">Join US</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:skychen901009@gmail.com" class="nav-link text-muted">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+
+    <script>
+        //back to top JS
+        var mybutton=document.getElementById("myBtn");
+    
+        window.onscroll=function() {scrollFunction()};
+    
+        function scrollFunction(){
+            if(document.body.scrollTop>20||document.documentElement.scrollTop>20){
+            mybutton.style.display="block";
+        }
+        else{
+            mybutton.style.display="none";
+        }
+        }   
+        function topFunction(){
+            document.body.scrollTop=0;
+            document.documentElement.scrollTop=0;
+        }
+
+        //search tabs JS
+        function myFunction(){
+            var input, filter, ul, li, a, i;
+            input=document.getElementById("mySearch");
+            filter=input.value.toUpperCase();
+            ul=document.getElementById("myMenu");
+            li=ul.getElementsByTagName("li");
+            for(i=0;i<li.length;i++){
+                a=li[i].getElementsByTagName("a")[0];
+                if(a.innerHTML.toUpperCase().indexOf(filter)>-1){
+                    li[i].style.display="";
+                }else{
+                    li[i].style.display="none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
