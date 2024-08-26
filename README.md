@@ -37,6 +37,4 @@ You can explore different experiments by opening the HTML files in your web brow
 ## Contributing
 Contributions are welcome! If you have any improvements or new experiments to add, please fork the repository and create a pull request.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
 
