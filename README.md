@@ -19,6 +19,10 @@ This project showcases different frontend development techniques and experiments
 - **JavaScript**: Programming language that enables interactive web pages.
 - **PHP**: Server-side scripting language designed for web development.
 
+## 👀 Implementation
+- **Cart**：After adding the item, JS will list the item to be summed up.
+- **Response Webpage Design**：The webpage is supported by RWD by bootstrap.
+
 ## Setup
 To set up the project locally, follow these steps:
 1. Clone the repository:
